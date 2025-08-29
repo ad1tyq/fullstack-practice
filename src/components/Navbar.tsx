@@ -31,9 +31,9 @@ function Navbar() {
                     <i className="bi bi-info-circle-fill pl-[10px]"></i>
                     <span className="py-2 pr-2">About</span>
                 </CustomLink>
-                <CustomLink href="/CRUD">
+                <CustomLink href="/posts">
                     <i className="bi bi-database pl-[10px]"></i>
-                    <span className="py-2 pr-2">CRUD</span>
+                    <span className="py-2 pr-2">Posts</span>
                 </CustomLink>
             </div>
         </div>
