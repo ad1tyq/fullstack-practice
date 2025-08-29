@@ -1,5 +1,6 @@
 import AboutPoints from "../../data/aboutdata";
 import { AboutImage } from "../../Images";
+import Image from "next/image";
 function About(){
     return(
         <div className="mt-78 flex flex-col text-black items-center gap-15 py-15 pb-15">
@@ -11,7 +12,7 @@ function About(){
                     {AboutPoints.map((point,index)=>{
                         return(
                             <div key={index} className="flex gap-5">
-                                <img src={point.image} alt="point img" className="w-6"/>
+                                <Image src={point.image} alt="point img" height={26} width={26}/>
                                 <div>
                                     <p className="font-bold">{point.title}</p>
                                     <p className="font-light">{point.text}</p>
