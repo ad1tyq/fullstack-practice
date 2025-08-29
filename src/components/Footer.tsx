@@ -1,3 +1,5 @@
+import { Facebook, Instagram, Mail, Twitter } from "../../Images";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-emerald-900 text-white pt-16 pb-8">
@@ -25,18 +27,18 @@ const Footer = () => {
           <div className="flex flex-col items-center">
             <h3 className="font-medium text-lg mb-4">Connect With Us</h3>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
-                <img src="../../socials/instagram.svg" alt="instgaram"/>
-              </a>
-              <a href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
-                <img src="../../socials/facebook.svg" alt="facebook"/>
-              </a>
-              <a href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
-                <img src="../../socials/twitter-x.svg" alt="twitter-x"/>
-              </a>
-              <a href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
-                <img src="../../socials/envelope.svg" alt="mail"/>
-              </a>
+              <Link href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
+                <Instagram/>
+              </Link>
+              <Link href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
+                <Facebook/>
+              </Link>
+              <Link href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
+                <Twitter/>
+              </Link>
+              <Link href="#" className="bg-white hover:bg-white/80 p-2 rounded-full hover:bg-purple transition-colors">
+                <Mail/>
+              </Link>
             </div>
           </div>
         </div>

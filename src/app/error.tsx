@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import { useEffect } from 'react';
 
 export default function Error({
@@ -52,9 +52,9 @@ export default function Error({
                             <li>• Contact support if the problem persists</li>
                         </ul>
                         <div className="flex justify-center">
-                            <a href="/"
+                            <Link href="/"
                                 className="rounded cursor-pointer hover:bg-gray-400 hover:text-gray-600 px-5 py-[2px] font-semibold text-lg mt-5 text-gray-500 bg-gray-300">home
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

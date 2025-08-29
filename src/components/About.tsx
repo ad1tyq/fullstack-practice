@@ -1,4 +1,5 @@
 import AboutPoints from "../../data/aboutdata";
+import { AboutImage } from "../../Images";
 function About(){
     return(
         <div className="mt-78 flex flex-col text-black items-center gap-15 py-15 pb-15">
@@ -19,7 +20,7 @@ function About(){
                         )
                     })}
                 </div>
-                <img src="../../bg/bg1.png" alt="about us" className="w-150 h-120 rounded-lg shadow-lg object-cover"/>
+                <AboutImage/>
             </div>
         </div>
     )
