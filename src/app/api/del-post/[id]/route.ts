@@ -20,6 +20,7 @@ export async function DELETE(
     
   } catch (error) {
     // Handle cases where the post might not exist
+    console.error(error);
     return NextResponse.json(
       { error: "Failed to delete post or post not found" },
       { status: 500 }
